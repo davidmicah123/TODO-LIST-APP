@@ -91,3 +91,34 @@
         margin-left: 6vw;
     }
 }
+
+@media (max-width: 500px) {
+    .app_area{
+        width: 95vw;
+    }
+    .modal_window{
+        width: 70vw;
+    }
+    #model_display, #model_display2{
+        left: 12vw;
+    }
+    .custom_alert{
+        width: 80vw;
+        margin-left: 6vw;
+    }
+}
+@media (max-width: 450px) {
+    .app_area{
+        width: 98vw;
+    }
+    .modal_window{
+        width: 70vw;
+    }
+    #model_display, #model_display2{
+        left: 12vw;
+    }
+    .custom_alert{
+        width: 80vw;
+        margin-left: 6vw;
+    }
+}
