@@ -59,3 +59,16 @@ jump_start.addEventListener('click',
         }
     }
 );
+
+
+let add1 = document.getElementById("add1");
+add1.addEventListener('click',
+    () => {
+        let model_display = document.getElementById("model_display")
+        model_display.style.display="block"
+        let body = document.getElementById("body");
+        body.setAttribute('style', 'background-color: #444;');
+        let main_app = document.getElementById("main_app");        
+        main_app.setAttribute('style', 'background-color: rgba(28, 121, 68, 0.781);');
+    }
+);
