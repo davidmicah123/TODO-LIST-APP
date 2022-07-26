@@ -249,3 +249,34 @@ trash_toogler.addEventListener('click',
 
 // let trash_clone1 = document.getElementById('');
 
+
+
+
+let delete_item1 = document.getElementById('delete_item1');
+delete_item1.style.display="none"
+delete_item1.addEventListener('click', 
+    () => {
+        let popup_warning = document.getElementById('popup_warning');
+        popup_warning.style.display="block"
+        // let item1 = document.getElementById('item1');
+        let warning = document.getElementById('popup_warning');
+        warning.style.display="block"
+        let close_warning = document.getElementById('acept_warning');
+        close_warning.textContent="close"
+        let keep_editting = document.getElementById('acept_warning');
+        keep_editting.addEventListener('click',
+            () => {
+                warning.style.display="none"
+            }
+        );
+        let delete_anyway = document.getElementById('ignore_warning');
+        delete_anyway.addEventListener('click',
+            () => {
+                warning.style.display="none"
+                let permanent_delete = document.getElementById('item1');
+                permanent_delete.style.display = 'none';
+            }
+        );                           
+
+    }
+);
