@@ -116,3 +116,51 @@ cancel_popup.addEventListener("click",
     // let direct_delete1 = document.getElementById('direct_delete1');
     // direct_delete1.style.display="none";
 
+
+
+let add_to_list_1 = document.getElementById("add_to_list_1");
+add_to_list_1.addEventListener('click', 
+    () => {
+
+        let heading1 = document.getElementById("task_heading1");
+        let activity1 = document.getElementById("task_activity1");
+        if(heading1.value != "" && activity1.value != ""){
+            let task1 = document.getElementById("model_display");
+            task1.style.display="none"
+            
+            // let new_task_heading = document.getElementById("task_heading1");
+            let set_heading = document.getElementById("new_heading1");
+            set_heading.textContent = heading1.value;
+
+            let direct_delete1 = document.getElementById('direct_delete1');
+            direct_delete1.style.display="block";
+
+            let add_plus_icon = document.getElementById('add_plus_icon');
+            add_plus_icon.style.display="none"
+            let view_icon = document.getElementById('view_icon');
+            view_icon.style.display="block"
+
+            let view_task1 = document.getElementById("view_icon");
+            view_icon.addEventListener('click',
+                () => {
+                    let task1 = document.getElementById("model_display");
+                    task1.style.display="block"
+                    let now_task = document.getElementById("model_heading");
+                    now_task.textContent="TASK"
+                    let now_remove = document.getElementById("add_to_list_1");
+                    now_remove.textContent="REMOVE TASK"
+                    now_remove.addEventListener('click', 
+                        () => {
+                            let warning = document.getElementById('popup_warning');
+                            warning.style.display="block"
+                            let delete_task_1 = document.getElementById('model_display');
+                            delete_task_1.style.display="block"
+                            let keep_editting = document.getElementById('acept_warning');
+                            keep_editting.addEventListener('click',
+                                () => {
+                                    warning.style.display="none"
+                                    let delete_task_1 = document.getElementById('model_display');
+                                    delete_task_1.style.display="block"
+                                }
+                            );
+
