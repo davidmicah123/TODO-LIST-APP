@@ -230,3 +230,22 @@ direct_delete1.addEventListener('click',
         
     }
 );
+
+
+let trash = document.getElementById("trash_box");
+
+let trash_toogler  = document.getElementById("trash_toogler");
+trash_toogler.addEventListener('click',
+    () => {
+        let trash_box = document.getElementById("trash_box");
+        if (trash_box.style.display === "none") {
+            trash_box.style.display = "block";
+        } else {
+            trash_box.style.display = "none";
+        }
+    }
+);
+
+
+// let trash_clone1 = document.getElementById('');
+
