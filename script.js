@@ -280,3 +280,37 @@ delete_item1.addEventListener('click',
 
     }
 );
+
+
+
+// second task to be added
+let second_task =  document.getElementById('view_task2');
+second_task.style.display="none";
+let adding_2 = document.getElementById('adding_2');
+adding_2.addEventListener('click', 
+    () => {
+        let model_display2 = document.getElementById('model_display2');
+        model_display2.style.display="block"
+        let cancel_popup2 = document.getElementById("cancel_popup2");
+        cancel_popup2.addEventListener("click",
+            () => {
+                model_display2.style.display="none";
+                // alert('working');
+            }
+        );
+        let add_to_list_2 = document.getElementById('add_to_list_2');
+        add_to_list_2.addEventListener('click',
+            () => {
+                let list2_heading = document.getElementById('task_heading2');
+                let list2_text = document.getElementById('task_activity2');
+                let error_message2 = document.getElementById('required2');
+                
+               
+                if (list2_heading.value === "" || list2_text.value === "") {
+                    error_message2.textContent = "Input field required";
+                    error_message2.setAttribute('style', 'color: red;');
+                }else{
+                    let second_task_heading = document.getElementById('new_heading2');
+                    second_task_heading.textContent = list2_heading.value;
+                    model_display2.style.display="none"
+                    second_task.style.display="grid";
