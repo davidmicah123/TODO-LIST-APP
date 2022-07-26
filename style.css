@@ -113,3 +113,65 @@ body{
     margin: 1vh 0;
     border: 2px solid black;
 }
+
+.add_activity{
+    width: 26.3vw;
+    height: 6vh;
+    background-color: #03b65c;
+    border: 0;
+    /* border-radius: 0.3em; */
+    padding: 1.3vh;
+    margin: 3vh 0;
+    border-radius: 2em;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.add_activity:hover{
+    background-color: rgb(8, 141, 74);
+}
+
+
+
+#trash{
+    position: fixed;
+    top: 1vh;
+    right: 1vw;
+    text-align: end;
+}
+.trash_btn{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 0.3em;
+    padding: 1.4vh;
+    background-color: rgb(44, 165, 104);
+}
+.trash_items{
+    width: 20vw;
+    background-color: rgba(250, 249, 249, 0.89);
+    /* height: 30vh; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vh;
+    padding: 2vh 1vw;
+    /* padding-left: 2vw; */
+    display: none;
+}
+.deleted1{
+    background-color: rgb(12, 196, 91);
+    text-align: center;
+    padding: 2vh 1vw;
+    width: 19vw;
+    height: 8vh;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+    /* color: lavender */
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.deleted1:hover{
+    background-color: seagreen;
+}
