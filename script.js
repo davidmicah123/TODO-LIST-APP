@@ -197,3 +197,36 @@ add_to_list_1.addEventListener('click',
 );
 
 
+let direct_delete1 = document.getElementById('direct_delete1');
+direct_delete1.addEventListener('click', 
+    () => {
+        let popup_warning = document.getElementById('popup_warning');
+        popup_warning.style.display="block"
+        
+        let keep_editting = document.getElementById('acept_warning');
+        keep_editting.addEventListener('click',
+        () => {
+            popup_warning.style.display="none"
+        }
+        );
+        let delete_anyway = document.getElementById('ignore_warning');
+        delete_anyway.addEventListener('click',
+            () => {
+                popup_warning.style.display="none";
+                let delete_task_1 = document.getElementById('model_display');
+                delete_task_1.style.display="none";
+                let main_page_delete = document.getElementById('view_task1');
+                main_page_delete.style.display="none";
+
+                
+            let delete_item1 = document.getElementById('delete_item1');
+            delete_item1.style.display= "block"
+                
+                let heading1 = document.getElementById("task_heading1");
+                let trash_item1_txt = document.getElementById("trash_item1_txt");
+                trash_item1_txt.textContent = heading1.value;
+            }
+        );
+        
+    }
+);
