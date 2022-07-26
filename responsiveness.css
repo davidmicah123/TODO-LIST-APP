@@ -32,3 +32,21 @@
     .add_heading_input{
         width: 90%;
     }
+    .event_date, .event_time{
+        width: 80%;
+    }
+    #task_activity1{
+        width: 90%;
+        max-width: 90%;
+    }
+    .add_activity_input{
+        width: 90%;
+    }
+    .add_activity{
+        width: 100%;
+    }
+    .custom_alert{
+        width: 70vw;
+        margin-left: 12.5vw;
+    }
+}
