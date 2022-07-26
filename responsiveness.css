@@ -1,1 +1,34 @@
-
+@media (max-width: 950px) {
+    #welcome_form{
+        width: 50vw;
+        padding: 2vh 3vw;
+    }
+    #name_input {
+        margin: 1vh 0;
+    }
+    #welcome_form label {
+        margin: 0;
+    }
+    #get_started {
+        margin: 1vh 0;
+    }
+    .app_area{
+        width: 75vw;
+        height: 50vh;
+    }
+    .trash_items{
+        width: 25vw;
+        padding: 2vh 2vw;
+    }
+    .deleted1{
+        width: 100%;
+    }
+    #model_display, #model_display2{
+        left: 27vw;
+    }
+    .modal_window{
+        width: 35vw;
+    }
+    .add_heading_input{
+        width: 90%;
+    }
