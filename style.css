@@ -175,3 +175,40 @@ body{
 .deleted1:hover{
     background-color: seagreen;
 }
+
+.custom_alert{
+    background-color: #03b65c;
+    width: 30vw;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    margin: 1vh auto;
+    padding: 2vh;
+    border-radius: 0.3em;
+    margin-left: 34.5vw;
+    color: white;
+    font-size: 2.8vh;
+    z-index: 150;
+    display: none;
+}
+.discard{
+    background-color: orangered;
+    color: white;
+    font-weight: bolder;
+    padding: 1.4vh;
+    border: 0;
+    border-radius: 2em;
+    text-transform: uppercase;
+}
+.stay{
+    background-color: springgreen;
+    color: white;
+    font-weight: bolder;
+    padding: 1.4vh;
+    border: 0;
+    border-radius: 2em;
+    text-transform: uppercase;
+}
+#view_icon{
+    display: none;
+}
