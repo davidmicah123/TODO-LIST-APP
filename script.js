@@ -50,7 +50,7 @@ jump_start.addEventListener('click',
             invalid_usename.style.display="block"
         }else{
             let main_app_name =  document.getElementById('username');
-            main_app_name.textContent = username_input.value;
+            main_app_name.textContent = `${username_input.value}'s`;
             
             
             main_app.style.display="block";
