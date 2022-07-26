@@ -314,3 +314,45 @@ adding_2.addEventListener('click',
                     second_task_heading.textContent = list2_heading.value;
                     model_display2.style.display="none"
                     second_task.style.display="grid";
+                    
+                    let new_heading2 = document.getElementById('new_heading2');
+                    new_heading2.textContent=list2_heading.value;
+                    adding_2.style.display="none";
+                    
+                    let add_plus_icon_2 = document.getElementById('add_plus_icon_2');
+                    add_plus_icon_2.style.display="none";
+                    let view_icon_2 = document.getElementById('view_icon_2');
+                    view_icon_2.style.display="block";
+                    view_icon_2.addEventListener('click', 
+                        () => {
+                            model_display2.style.display="block"
+                        }
+                    );
+
+
+                    let direct_delete2 = document.getElementById('direct_delete2');
+                    direct_delete2.addEventListener('click', 
+                        () => {
+                            let warning = document.getElementById('popup_warning2');
+                            warning.style.display="block";
+
+                            let ignore_warning = document.getElementById('ignore_warning2');
+                            ignore_warning2.addEventListener('click', 
+                                () => {
+                                    warning.style.display="none";
+                                    second_task.style.display="none";
+                                }
+                            );
+                            let acept_warning = document.getElementById('acept_warning2');
+                            acept_warning.addEventListener('click', 
+                                () => {
+                                    warning.style.display="none";
+                                }
+                            );
+                        }
+                    );
+                }
+            }
+        );
+    }
+);
