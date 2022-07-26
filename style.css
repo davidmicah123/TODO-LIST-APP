@@ -212,3 +212,50 @@ body{
 #view_icon{
     display: none;
 }
+
+.add_icon_general{
+    color: white;
+    position: absolute;
+    right: 2.7vw;
+    font-size: 2rem;
+}
+#welcome_form{
+    color: black;
+    background-color: white;
+    width: 30vw;
+    height: 24vh;
+    /* padding: 5vh auto; */
+    padding-top: 3vh;
+    margin: 34vh auto;
+}
+#welcome_form label{
+    display: block;
+    margin: 0 1vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+#name_input{
+    width: 20vw;
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+}
+#get_started{
+    margin: 1vh 1vw;
+    padding: 1.5vh 2vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    border-radius: 0.2em;
+}
+#get_started:hover{
+    background-color: white;
+    color: black;
+}
+#invalid_usename{
+    margin: 1vh 1vw;
+    font-size: 3vh;
+    color: red;
+    display: none;
+}
