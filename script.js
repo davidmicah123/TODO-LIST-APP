@@ -163,4 +163,37 @@ add_to_list_1.addEventListener('click',
                                     delete_task_1.style.display="block"
                                 }
                             );
+                        let delete_anyway = document.getElementById('ignore_warning');
+                            delete_anyway.addEventListener('click',
+                                () => {
+                                    warning.style.display="none"
+                                    let delete_task_1 = document.getElementById('model_display');
+                                    delete_task_1.style.display="none"
+                                    let main_page_delete = document.getElementById('view_task1');
+                                    main_page_delete.style.display="none"
+
+                                    
+                                let delete_item1 = document.getElementById('delete_item1');
+                                delete_item1.style.display= "block"
+                                    
+                                    let heading1 = document.getElementById("task_heading1");
+                                    let trash_item1_txt = document.getElementById("trash_item1_txt");
+                                    trash_item1_txt.textContent = heading1.value;
+                                }
+                            );
+                            // let delete_task_indicator_1 = document.getElementById('view_task1');
+                            // delete_task_indicator_1.style.display="none"
+                        }
+                    );
+                }
+            );
+
+        }else{
+            let required = document.getElementById("required");
+            required.textContent = "Input fields required";
+            required.setAttribute('style', 'color: red;')
+        }
+    }
+);
+
 
