@@ -5,6 +5,7 @@
     }
     #name_input {
         margin: 1vh 0;
+        width: 85%;
     }
     #welcome_form label {
         margin: 0;
